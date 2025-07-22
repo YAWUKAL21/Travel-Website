@@ -40,17 +40,16 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div 
               key={index}
-              className={"bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 relative "
-                }
+             className={"bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-3 transform transition-all duration-300 ease-in-out relative"
+}
             >
              
-
-              {/* Service Icon */}
-              <div className="bg-[#FFF1DA] w-20 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
+              <div className="bg-[#FFF1DA] w-20 h-16 rounded-full flex items-center justify-center mb-6 mx-auto transform transition-transform duration-300 hover:scale-110 cursor-pointer">
                 <img 
                   src={service.icon} 
                   alt={service.title}

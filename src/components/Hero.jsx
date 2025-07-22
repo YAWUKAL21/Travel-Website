@@ -3,6 +3,7 @@ import React from 'react';
 const Hero = () => {
   return (
     <section className="px-16 py-12 max-w-7xl mx-auto my-12 " > {/* Added margins */}
+     <div className="absolute top-0 right-0 w-1/3 h-full bg-[#FFF1DA] -z-10 rounded-l-[80px]"></div>
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-12 md:mb-0">
           <h3 className="text-lg font-bold text-[#DF6951] mb-4 uppercase tracking-wider">Best Destinations Around The World</h3>
