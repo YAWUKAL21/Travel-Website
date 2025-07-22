@@ -5,7 +5,7 @@ import Testimonials from './components/Testimonials';
 import TopDestinations from './components/TopDestinations';
 import Hero from './components/Hero';
 import Subscribe from './components/Subscribe';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import Header from './components/Header';
 
 function App() {
