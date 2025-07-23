@@ -7,11 +7,12 @@ export default function Header() {
   const [selectedLang, setSelectedLang] = useState('EN');
 
   return (
-    <header className="fixed top-0  w-full z-50 bg-white shadow-md py-2 " >
+    <header className="fixed top-0 w-full z-50 bg-white shadow-md py-2 overflow-x-hidden " >
       {/* Background colored section - right half */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-[#FFF1DA] -z-10 rounded-l-[80px]"></div> 
+    <div className="absolute top-0 right-0 w-full md:w-1/3 h-[60%] md:h-full bg-[#FFF1DA] -z-10 rounded-l-[0px]"></div>
+
       <div className="max-w-7xl mx-auto">
-        <div className="flex items-center justify-between ">
+        <div className="flex items-center justify-between w-full px-4 md:px-8">
           {/* Logo */}
           <div className="flex-shrink-0 cursor-pointer" >
             <h1 className="text-4xl font-extrabold text-black font-sans flex items-center">
@@ -99,7 +100,7 @@ export default function Header() {
 
         {/* Mobile menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 space-y-4 pb-4">
+          <div className=" md:hidden mt-4 px-4 space-y-4 pb-4">
             <a href="#" className="block text-[#181E4B] font-medium">Destinations</a>
             <a href="#" className="block text-[#181E4B] font-medium">Hotels</a>
             <a href="#" className="block text-[#181E4B] font-medium">Flights</a>
@@ -128,7 +129,7 @@ export default function Header() {
                 </button>
 
                 {showLangOptions && (
-                  <div className="absolute top-full mt-2 right-0 bg-white border rounded shadow-md z-10">
+                  <div className="absolute top-full mt-2 left-0 bg-white border  rounded shadow-md z-10">
                     {['EN', 'AM', 'FR'].map((lang) => (
                       <button
                         key={lang}

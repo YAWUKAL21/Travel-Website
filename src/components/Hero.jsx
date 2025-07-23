@@ -2,8 +2,8 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="px-16 py-12 max-w-7xl mx-auto my-12 " > {/* Added margins */}
-     <div className="absolute top-0 right-0 w-1/3 h-full bg-[#FFF1DA] -z-10 rounded-l-[80px]"></div>
+    <section className="relative overflow-hidden py-12 px-6 md:px-16 my-16 " >
+      <div className="absolute inset-y-0 top-0 right-0 w-full md:w-[33%] h-[70%] bg-[#FFF1DA] rounded-bl-[2500px] -z-10" />
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-12 md:mb-0">
           <h3 className="text-lg font-bold text-[#DF6951] mb-4 uppercase tracking-wider">Best Destinations Around The World</h3>
@@ -42,14 +42,15 @@ const Hero = () => {
               className="w-32 h-24 object-contain"
             />
           </div>
-           <div className="absolute -top-2 -right-6 z-0 hidden lg:block">
+           <div className="absolute -top-[-70px] -right-0 z-0 hidden lg:block ">
             <img 
               src="/plane.png" 
               alt="Flying plane" 
-              className="w-40 h-32 object-contain opacity-90"
+              className="w-30 h-22 bg-[#FFF1DA] object-contain opacity-90"
             />
           </div>
         </div>
+        
       </div>
     </section>
   );

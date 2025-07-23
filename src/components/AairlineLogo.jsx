@@ -4,7 +4,7 @@ const AirlinePartners = () => {
   const airlines = [
     {
       name: 'Jetstar',
-      logo: '/jestar.png' // Replace with your actual image path
+      logo: '/jestar.png' 
     },
     {
       name: 'Expedia',

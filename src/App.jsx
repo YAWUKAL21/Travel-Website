@@ -9,13 +9,13 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 
 function App() {
-
   return (
-    <div className="font-sans bg-white">
+    <div className="font-sans">
       <Header />
-      <main className="px-4 sm:px-8 lg:px-16 xl:px-24">
-        <div className="max-w-7xl mx-auto">
-          <Hero />
+      <main >
+         <Hero /> 
+        <div className="px-4 sm:px-8 lg:px-16 xl:px-24">
+         
           <Services />
           <TopDestinations />
           <BookingSteps />
@@ -27,7 +27,6 @@ function App() {
       <Footer />
     </div>
   );
-
 }
 
 export default App;
